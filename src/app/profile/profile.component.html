@@ -1,0 +1,14 @@
+<div>
+    <div class="card" *ngIf="profile">
+        
+        <div class="card-body">
+            <h5 class="card-title">{{profile.name | uppercase}}</h5>
+            <img class="card-img-top rounded" src={{profile.avatar_url}} alt="abcd">
+            <p class="card-text">{{profile.bio}}</p>
+            <!-- <p class="card-text">{{product.price}}</p> -->
+            <a href={{profile.html_url}} target="_blank">Profile</a>
+            <!-- <ng-template #elseBlock><button class="btn btn-light" disabled>Sold out</button></ng-template> -->
+            <!-- <a (click)="goToDetails(product.id)" class="btn btn-success ml-1">Product Details</a> -->
+        </div>
+    </div>
+</div>

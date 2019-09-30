@@ -1,0 +1,13 @@
+<input class="form-control form-control-lg" type="text" placeholder="Search" (keyup.enter)="getProfile()" [(ngModel)]="username" >
+
+<button class="btn btn-warning btn-primary mt-2 mb-2" (click)="getProfile()" >Search</button>
+<div *ngIf="isLoading">
+    <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="load">
+</div>
+
+<app-profile [profile]="profile"></app-profile>
+
+<!-- 
+[(ngModel)]="searchValue"
+<p>{{searchValue}}</p>
+(click)="pushData()" -->
